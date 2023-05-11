@@ -1,0 +1,148 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.shows-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.show-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.show-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.show-card h5 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.show-card a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.show-card a:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.dark-mode {
+  --font-color: #fff;
+  --background-color: #292929;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display:flex;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #0c63c1bf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #82b4ea;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border-radius:5px;
+}
+
+.read-the-docs {
+  color: #888;
+}
